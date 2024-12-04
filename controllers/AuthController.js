@@ -105,3 +105,12 @@ export const login = async (req, res, next) => {
     res.status(400).send("LOGIN ERROR");
   }
 };
+
+export const getUserInfo = async (req, res, next) => {
+  try {
+    console.log("i am in getuserinfo");
+    res.send("i m inside getuserinfo function.");
+  } catch (error) {
+    console.log("getUserInfo :: AuthController :: Error ::", error);
+  }
+};
